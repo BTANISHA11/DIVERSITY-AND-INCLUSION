@@ -11,10 +11,6 @@ import { useSelector } from 'react-redux';
 
 
 
-
-
-
-
 export default function ApplicationsDetail() {
     
     const router = useRouter();
@@ -49,7 +45,7 @@ export default function ApplicationsDetail() {
                         <NavBar />
                         <div className='w-full px-4 flex flex-wrap  pt-20 '>
                             <div className='w-full h-32 bg-gray-50 text-indigo-600 font-bold flex items-center justify-center flex-col'>
-                                <h1 className='text-3xl'>Application Detail</h1>
+                                <h1 className='text-3xl'>Applicant Detail</h1>
                             </div>
                             <div className='flex flex-col md:flex-row justify-center md:justify-around items-center w-full h-32 px-4'>
                                 <div className='flex py-2'>
@@ -59,6 +55,10 @@ export default function ApplicationsDetail() {
                                 <div className='flex py-2'>
                                     <h1 className='text-base font-semibold px-2 '>Email</h1>
                                     <p className='text-sm px-2'>{data?.data?.email}</p>
+                                </div>
+                                <div className='flex py-2'>
+                                    <h1 className='text-base font-semibold px-2 '>Apply Date</h1>
+                                    <p className='text-sm px-2'>{data?.data?.date}</p>
                                 </div>
                                 <div className='flex py-2'>
                                     <h1 className='text-base font-semibold px-2 '>Application Status</h1>
